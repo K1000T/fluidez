@@ -1,0 +1,273 @@
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/:path*",
+      "headers": [
+        {
+          "key": "X-DNS-Prefetch-Control",
+          "value": "on"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=63072000; includeSubDomains; preload"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        }
+      ],
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))?(?:/)?$"
+    },
+    {
+      "source": "/static/:path*",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ],
+      "regex": "^/static(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))?(?:/)?$"
+    },
+    {
+      "source": "/_next/static/:path*",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ],
+      "regex": "^/_next/static(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))?(?:/)?$"
+    }
+  ],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/about",
+      "regex": "^/about(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/about(?:/)?$"
+    },
+    {
+      "page": "/api/debug/db",
+      "regex": "^/api/debug/db(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/debug/db(?:/)?$"
+    },
+    {
+      "page": "/api/delete-audio",
+      "regex": "^/api/delete\\-audio(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/delete\\-audio(?:/)?$"
+    },
+    {
+      "page": "/api/delete-score",
+      "regex": "^/api/delete\\-score(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/delete\\-score(?:/)?$"
+    },
+    {
+      "page": "/api/forgot-password",
+      "regex": "^/api/forgot\\-password(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/forgot\\-password(?:/)?$"
+    },
+    {
+      "page": "/api/get-audios",
+      "regex": "^/api/get\\-audios(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/get\\-audios(?:/)?$"
+    },
+    {
+      "page": "/api/login",
+      "regex": "^/api/login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/login(?:/)?$"
+    },
+    {
+      "page": "/api/logout",
+      "regex": "^/api/logout(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/logout(?:/)?$"
+    },
+    {
+      "page": "/api/me",
+      "regex": "^/api/me(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/me(?:/)?$"
+    },
+    {
+      "page": "/api/profile",
+      "regex": "^/api/profile(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/profile(?:/)?$"
+    },
+    {
+      "page": "/api/save-score",
+      "regex": "^/api/save\\-score(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/save\\-score(?:/)?$"
+    },
+    {
+      "page": "/api/signup",
+      "regex": "^/api/signup(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/signup(?:/)?$"
+    },
+    {
+      "page": "/api/transcribe",
+      "regex": "^/api/transcribe(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/transcribe(?:/)?$"
+    },
+    {
+      "page": "/api/transcribe_local",
+      "regex": "^/api/transcribe_local(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/transcribe_local(?:/)?$"
+    },
+    {
+      "page": "/api/upload-audio",
+      "regex": "^/api/upload\\-audio(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/upload\\-audio(?:/)?$"
+    },
+    {
+      "page": "/api/upload-local",
+      "regex": "^/api/upload\\-local(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/upload\\-local(?:/)?$"
+    },
+    {
+      "page": "/api/upload-to-supabase",
+      "regex": "^/api/upload\\-to\\-supabase(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/upload\\-to\\-supabase(?:/)?$"
+    },
+    {
+      "page": "/daf",
+      "regex": "^/daf(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/daf(?:/)?$"
+    },
+    {
+      "page": "/ejercicios",
+      "regex": "^/ejercicios(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/ejercicios(?:/)?$"
+    },
+    {
+      "page": "/ejercicios-fonema",
+      "regex": "^/ejercicios\\-fonema(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/ejercicios\\-fonema(?:/)?$"
+    },
+    {
+      "page": "/juego-fonema",
+      "regex": "^/juego\\-fonema(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/juego\\-fonema(?:/)?$"
+    },
+    {
+      "page": "/juego-silabas",
+      "regex": "^/juego\\-silabas(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/juego\\-silabas(?:/)?$"
+    },
+    {
+      "page": "/karaoke",
+      "regex": "^/karaoke(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/karaoke(?:/)?$"
+    },
+    {
+      "page": "/login",
+      "regex": "^/login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/login(?:/)?$"
+    },
+    {
+      "page": "/progreso",
+      "regex": "^/progreso(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/progreso(?:/)?$"
+    },
+    {
+      "page": "/signup",
+      "regex": "^/signup(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/signup(?:/)?$"
+    },
+    {
+      "page": "/terms",
+      "regex": "^/terms(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/terms(?:/)?$"
+    },
+    {
+      "page": "/visualizacion",
+      "regex": "^/visualizacion(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/visualizacion(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

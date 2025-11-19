@@ -1,0 +1,15 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/karaoke/layout,_N_T_/karaoke/page,_N_T_/karaoke"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/karaoke/__PAGE__",
+    "/karaoke",
+    "/_index",
+    "/_head"
+  ]
+}

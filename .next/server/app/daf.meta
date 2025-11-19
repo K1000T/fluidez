@@ -1,0 +1,15 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/daf/layout,_N_T_/daf/page,_N_T_/daf"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/daf/__PAGE__",
+    "/daf",
+    "/_index",
+    "/_head"
+  ]
+}

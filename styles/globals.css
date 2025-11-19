@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  @apply bg-gray-50 text-gray-800 antialiased;
+}
+
+h1, h2, h3, h4 {
+  @apply font-bold text-gray-900;
+}
+
+p {
+  @apply leading-relaxed text-gray-700;
+}
+
+a {
+  @apply text-blue-600 hover:text-blue-700 transition;
+}

@@ -1,0 +1,3 @@
+{
+  "/api/upload-audio/route": "app/api/upload-audio/route.js"
+}

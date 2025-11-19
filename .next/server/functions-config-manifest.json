@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "functions": {
+    "/api/debug/db": {},
+    "/api/delete-score": {},
+    "/api/delete-audio": {},
+    "/api/get-audios": {},
+    "/api/logout": {},
+    "/api/me": {},
+    "/api/login": {},
+    "/api/forgot-password": {},
+    "/api/profile": {},
+    "/api/save-score": {},
+    "/api/signup": {},
+    "/api/upload-audio": {},
+    "/api/transcribe_local": {},
+    "/api/upload-local": {},
+    "/api/upload-to-supabase": {},
+    "/api/transcribe": {}
+  }
+}
