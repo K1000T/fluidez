@@ -25,12 +25,14 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Local env files
+# IMPORTANTE: Archivos con credenciales y API keys
 .env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
+prod.ps1
+dev.ps1
 
 # Vercel
 .vercel

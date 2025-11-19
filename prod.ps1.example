@@ -1,0 +1,19 @@
+# ⚠️ ARCHIVO DE EJEMPLO - Copia este archivo como prod.ps1 y completa con tus credenciales
+# NO compartas tus credenciales reales
+
+# Configura las variables de entorno para producción
+$env:POSTGRES_URL="postgresql://postgres.[TU-PROYECTO]:[TU-PASSWORD]@aws-0-[REGION].pooler.supabase.com:6543/postgres?pgbouncer=true"
+$env:DATABASE_URL="postgresql://postgres.[TU-PROYECTO]:[TU-PASSWORD]@aws-0-[REGION].pooler.supabase.com:6543/postgres?pgbouncer=true"
+
+# Supabase config for client
+$env:NEXT_PUBLIC_SUPABASE_URL="https://[TU-PROYECTO].supabase.co"
+$env:NEXT_PUBLIC_SUPABASE_ANON_KEY="tu-anon-key-aqui"
+
+# Supabase config for server
+$env:SUPABASE_URL="https://[TU-PROYECTO].supabase.co"
+$env:SUPABASE_SERVICE_KEY="tu-service-role-key-aqui"
+$env:SUPABASE_ANON_KEY="tu-anon-key-aqui"
+
+$env:NODE_ENV="production"
+
+npm start
