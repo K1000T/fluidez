@@ -27,8 +27,8 @@ Fluidez Activa es una aplicación web gratuita diseñada para ayudar a personas 
 
 ```bash
 # Clonar repositorio
-git clone https://github.com/tu-usuario/fluidez-activa.git
-cd fluidez-activa
+git clone https://github.com/K1000T/fluidez.git
+cd fluidez
 
 # Instalar dependencias
 npm install
